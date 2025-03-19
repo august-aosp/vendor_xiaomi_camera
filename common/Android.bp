@@ -1,0 +1,123 @@
+//
+// Automatically generated file. DO NOT MODIFY
+//
+
+soong_namespace {
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_algoup_jni.xiaomi",
+    owner: "xiaomi/camera",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcamera_algoup_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libgui",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_jpegutil_jni.xiaomi",
+    owner: "xiaomi/camera",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcamera_jpegutil_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libion",
+                "libmedia",
+                "libcamera_client",
+                "libandroid_runtime",
+                "libnativehelper",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libgui",
+                "libui",
+                "libbinder",
+                "libhidlbase",
+                "libhidltransport",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "libcamera_mianode_jni.xiaomi",
+    owner: "xiaomi/camera",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm64: {
+            srcs: [
+                "proprietary/system/lib64/libcamera_mianode_jni.xiaomi.so",
+            ],
+            shared_libs: [
+                "libvndksupport",
+                "libcamera_client",
+                "libcamera_metadata",
+                "libgui",
+                "libbinder",
+                "libutils",
+                "libcutils",
+                "liblog",
+                "libxml2",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "64",
+    prefer: true,
+}
+
+android_app_import {
+    name: "MiuiCamera",
+    owner: "xiaomi/camera",
+    apk: "proprietary/system/priv-app/MiuiCamera/MiuiCamera.apk",
+    overrides: [
+        "GrapheneCamera",
+        "Camera",
+        "Camera2",
+        "Aperture",
+        "GoogleCameraGo",
+    ],
+    certificate: "platform",
+    dex_preopt: {
+        enabled: false,
+    },
+    privileged: true,
+}

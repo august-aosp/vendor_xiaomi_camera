@@ -1,0 +1,9 @@
+# Unpinned blobs from picasso-user 12 RKQ1.200826.002 V13.0.5.0.SGICNXM release-keys
+
+# MIUI Camera
+system/etc/public.libraries-xiaomi.txt
+system/lib64/libcamera_algoup_jni.xiaomi.so
+system/lib64/libcamera_mianode_jni.xiaomi.so
+system/lib64/libcamera_jpegutil_jni.xiaomi.so
+system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GrapheneCamera,Camera,Camera2,Aperture,GoogleCameraGo|f10fcba99dd8d9a42abd2dc51c8749e1bb39e73b
+vendor/etc/camera/sceneDetection.xml
