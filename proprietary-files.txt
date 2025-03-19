@@ -5,5 +5,5 @@ system/etc/public.libraries-xiaomi.txt
 system/lib64/libcamera_algoup_jni.xiaomi.so
 system/lib64/libcamera_mianode_jni.xiaomi.so
 system/lib64/libcamera_jpegutil_jni.xiaomi.so
-system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GrapheneCamera,Camera,Camera2,Aperture,GoogleCameraGo|f10fcba99dd8d9a42abd2dc51c8749e1bb39e73b
+system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=GrapheneCamera,Camera,Camera2,Aperture,GoogleCameraGo|5cbf6b4eb1ce503c06cda7e544c2bb5d5f706e46
 vendor/etc/camera/sceneDetection.xml
